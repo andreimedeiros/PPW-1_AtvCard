@@ -1,23 +1,34 @@
 <p>{{titulo}}</p>
 
-<mat-form-field appearance="fill">
+<mat-card class="mat-card-principal">
+<mat-card-title>Inserção de Usuário</mat-card-title>
+ <br>
+
+<mat-form-field appearance="fill" class="mat-form-principal">
   <mat-label>Nome</mat-label>
-  <input matInput [(ngModel)]="usuario.nome" placeholder="digite o nome">
+  <mat-card-content> <input matInput [(ngModel)]="usuario.nome" placeholder="digite o nome"> </mat-card-content>
 </mat-form-field>
 
-<mat-form-field appearance="fill">
+
+
+<mat-form-field appearance="fill" class="mat-form-principal">
   <mat-label>CPF</mat-label>
-  <input matInput [(ngModel)]="usuario.cpf" placeholder="digite o cpf">
+  <mat-card-content><input matInput [(ngModel)]="usuario.cpf" placeholder="digite o cpf"></mat-card-content> 
 </mat-form-field>
 
-<mat-form-field appearance="fill">
+
+<mat-form-field appearance="fill" class="mat-form-principal">
   <mat-label>Idade</mat-label>
-  <input matInput [(ngModel)]="usuario.idade" placeholder="digite a idade">
+  <mat-card-content><input matInput [(ngModel)]="usuario.idade" placeholder="digite a idade"></mat-card-content>
 </mat-form-field>
 
+
+<mat-card-footer class="botao">
 <button mat-raised-button mat-icon-button color="primary" (click)="inserirUsuario()">
   <mat-icon>add</mat-icon>
 </button>
+</mat-card-footer>
+</mat-card>
 
 <br>
 
